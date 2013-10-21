@@ -3,13 +3,24 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    David Cochran -- Executive Producer -- @davidcochran
+
+    Collin Berg -- Web Development -- @bergalicus
+
+    Phil Jahn -- Interactive Design -- @benrummage
+
+    Seth Piper -- Interactive Design -- @piperseth
 
 # THANKS
 
-    <name>
+    Oklahoma Wesleyan University
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    HTML5
+    CSS3
+    Bootstrap 3
+    Normalize.css
+    jQuery
+    Modernizr
+    Isotope.js

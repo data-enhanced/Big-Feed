@@ -1,11 +1,16 @@
 //
-// Carousel
+// Customized Carousel
 // --------------------------------------------------
 
 
 // Wrapper for the slide container and indicators
 .carousel {
   position: relative;
+
+  padding-top: 12px; // added
+  padding-bottom: 24px; // added
+  background-color: @gray-lighter; // added
+
 }
 
 .carousel-inner {
@@ -18,11 +23,15 @@
     position: relative;
     .transition(.6s ease-in-out left);
 
+    max-height: 440px; // added
+
     // Account for jankitude on images
     > img,
     > a > img {
       .img-responsive();
       line-height: 1;
+      min-width: 100%; // added
+      height: auto; // added
     }
   }
 
@@ -135,7 +144,8 @@
 
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: 0; // edited
+  margin-bottom: 0; // added
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -146,18 +156,20 @@
 
   li {
     display: inline-block;
-    width:  10px;
-    height: 10px;
-    margin: 1px;
+    width:  16px; // edited
+    height: 16px; // edited
+    // margin: 1px; // edited
     text-indent: -999px;
-    border: 1px solid @carousel-indicator-border-color;
+    background-color: @carousel-indicator-bg; // added
+    // border: 1px solid @carousel-indicator-border-color;
     border-radius: 10px;
     cursor: pointer;
   }
+  li:hover, // added
   .active {
-    margin: 0;
-    width:  12px;
-    height: 12px;
+    // margin: 0;
+    // width:  12px; // edited
+    // height: 12px; // edited
     background-color: @carousel-indicator-active-bg;
   }
 }
@@ -188,11 +200,11 @@
   // Scale up the controls a smidge
   .carousel-control .icon-prev,
   .carousel-control .icon-next {
-    width: 30px;
-    height: 30px;
-    margin-top: -15px;
-    margin-left: -15px;
-    font-size: 30px;
+    font-size: @carousel-control-font-size-large;
+    width: @carousel-control-font-size-large;
+    height: @carousel-control-font-size-large;
+    margin-top: -(@carousel-control-font-size-large / 2);
+    margin-left: -(@carousel-control-font-size-large / 2);
   }
 
   // Show and left align the captions
@@ -203,7 +215,7 @@
   }
 
   // Move up the indicators
-  .carousel-indicators {
-    bottom: 20px;
-  }
+  // .carousel-indicators {
+  //   bottom: 20px;
+  // }
 }
