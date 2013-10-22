@@ -15,6 +15,7 @@
 
         <link rel="stylesheet" href="css/__main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
         <!-- Respond.js for IE 8 or less only -->
         <!--[if (lt IE 9) & (!IEMobile)]>
             <script src="js/vendor/respond.min.js"></script>
@@ -27,30 +28,30 @@
         <![endif]-->
 
     <header role="banner">
-      <nav id="nav-main" class="navbar navbar-fixed-top">
+      <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <div class="nav-collapse collapse">
-            <div class="portfolioFilter">
+           <div class="navbar-header">
+            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button> -->
+            <a class="navbar-brand" href="index.html"><img src="img/logo1.png" alt="Eagle Mag" width="120"></a>
+          </div>
+          <!-- <div class="nav-collapse collapse"> -->
+            <!-- <div class="portfolioFilter"> -->
             <ul class="nav navbar-nav">
               <li><a href="#" data-filter="*" class="current">All Categories</a></li>
-              <li><a href="#" data-filter=".feature-story">Features</a></li>
+              <li><a href="#" data-filter=".features">Features</a></li>
               <li><a href="#" data-filter=".videos">Videos</a></li>
             </ul>
-            <ul class="nav navbar-nav social">
+            <ul class="nav navbar-nav nav-social">
               <li><a href="#"><i class="icon-twitter"></i></a></li>
               <li><a href="#"><i class="icon-facebook"></i></a></li>
               <li><a href="#"><i class="icon-tumblr"></i></a></li>
             </ul>
-            </div><!-- portfolio Filter -->
-          </div><!--/.nav-collapse -->
-
-          <a class="brand navbar-brand" href="index.html"><img alt="Bootstrappin&#39;" src="img/logo1.png"></a>
+            <!-- </div> --><!-- portfolio Filter -->
+          <!-- </div> --><!-- /.nav-collapse -->
         </div><!-- /.container -->
       </nav>
     </header> <!-- / role banner -->

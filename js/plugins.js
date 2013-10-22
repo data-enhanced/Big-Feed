@@ -21,7 +21,6 @@
     }
 }());
 
-// Place any jQuery/helper plugins in here.
 
 /**
 * bootstrap.js v3.0.0 by @fat and @mdo

@@ -4569,17 +4569,16 @@ html {
 body {
   background: transparent;
 }
-.social {
+.nav-social {
   float: right;
 }
 .navbar-brand {
-  float: none;
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
 }
 .navbar-nav > li > a {
   padding-left: 15px;
   padding-right: 15px;
-  font-family: sans serif;
   text-transform: capitalize;
 }
 #featured {
@@ -4846,6 +4845,9 @@ body {
 }
 #featured .view3:hover img {
   transition-delay: 0s;
+}
+body {
+  padding-top: 64px;
 }
 .page-contents {
   padding-top: 20px;
