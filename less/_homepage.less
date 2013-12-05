@@ -15,30 +15,23 @@ body {
 	background: transparent;
 }
 
-.navbar {
-	margin: 0 auto 0 auto;
-	box-shadow: 0 0 2px 0 rgba(0,0,0,.5);
-}
-
 .nav-social {
 	float: right;
-	font-size: 1em;
 }
 
 .navbar-brand {
 	// float: left;
 	// margin: 0 auto;
 	position: absolute;
-	left: 46%;
+	left: 50%;
 	// margin-left: -200px;
 }
 
 .navbar-nav>li>a {
-	padding-left: 12px;
-	padding-right: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
 	// font-family: sans serif;
-	text-transform: uppercase;
-	font-size: 1.9em;
+	text-transform: capitalize;
 }
 
 .item-link:hover {
@@ -90,9 +83,9 @@ body {
 			h2 {
 			position: absolute;
 			left: 0;
-			width: 245px;
-			margin-left: 180px;
-			margin-top: -250px;
+			width: 600px;
+			//margin-left: 180px;
+			margin-top: 120px;
 			}
 
 			p {
@@ -127,12 +120,23 @@ body {
 			width: 300px;
 			height: 200px;
 
-			h2 {
+			h2{
+			position: absolute;
+			left: 0;
+			width: 300px;
+			//margin-left: 30px;
+			margin-top: 40px;
+			letter-spacing: 0.0em;
+			font-size: 26px;
+			font-weight: 400;
+			}
+
+			.lower {
 			position: absolute;
 			left: 0;
 			width: 245px;
 			margin-left: 30px;
-			margin-top: -160px;
+			margin-top: -60px;
 			}
 
 			p {
@@ -168,9 +172,12 @@ body {
 			h2 {
 			position: absolute;
 			left: 0;
-			width: 245px;
-			margin-left: 30px;
-			margin-top: -300px;
+			width: 300px;
+			//margin-left: 30px;
+			margin-top: 140px;
+			letter-spacing: 0.0em;
+			font-size: 26px;
+			font-weight: 400;
 			}
 
 			p {
@@ -239,21 +246,36 @@ body {
     transition: all 0.3s ease-in-out 0.1s;
 }
 
+.view1 h2{
+    opacity:0;
+    background: transparent;
+    transform: scale(10);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
 .view1 .mask1{
     background-color: rgba(0,0,0,0.6);
     opacity:0;
     transition: all 0.2s ease-in 0.3s;
 }
 
+.view1 .mask1 h2 {
+    opacity:0;
+    transition: all 0.3s ease-in-out 0.2s;
+}
+
 .view1 p {
     opacity:0;
-    transform: scale(10);
     transition: all 0.3s ease-in-out 0.2s;
+}
+
+.view1:hover h2 {
+    opacity:1;
+    transition-delay: 0.2s;
 }
 
 .view1:hover p {
     opacity:1;
-    transform: scale(1);
     transition-delay: 0.2s;
 }
 
@@ -296,13 +318,11 @@ body {
 
 .view2 p {
     opacity:0;
-    transform: scale(10);
     transition: all 0.3s ease-in-out 0.2s;
 }
 
 .view2:hover p {
     opacity:1;
-    transform: scale(1);
     transition-delay: 0.2s;
 }
 
@@ -343,9 +363,13 @@ body {
     transition: all 0.2s ease-in 0.3s;
 }
 
+.view3 p {
+    opacity:0;
+    transition: all 0.3s ease-in-out 0.2s;
+}
+
 .view3:hover p {
     opacity:1;
-    transform: scale(1);
     transition-delay: 0.2s;
 }
 
@@ -358,4 +382,69 @@ body {
     transition-delay: 0s;
 }
 
+}
+
+.ratio-3-2 .text {
+	width: 300px;
+	height: 200px;
+	background-color: #fff;
+}
+
+#featured .text p {
+	line-height: 1.6;
+	color: #000;
+	text-shadow: none;
+	font-family: 'Georgia' serif;
+	font-size: 18px;
+	text-align: left;
+}
+
+#featured .feed-item.ratio-3-2 .text p {
+	margin-top: 30px;
+}
+
+
+
+.ratio-3-4 .text {
+	width: 300px;
+	height: 400px;
+	background-color: #fff;
+}
+
+#featured .feed-item.ratio-3-4 .text p {
+	margin-top: 50px;
+}
+
+#featured .feed-item .story-actions {
+	margin: 0 0 .182em -8px;
+	padding-top: 140px;
+}
+#featured .feed-item .story-action {
+	list-style: none;
+	font-size: .975em;
+	display: inline-block;
+}
+
+#featured .feed-item .story-action.left {
+	float: left;
+	padding-left: 10px;
+}
+
+#featured .feed-item .story-action.right {
+	float: right;
+	padding-right: 50px;
+}
+
+#featured .feed-item .story-action a {
+	text-decoration: none;
+	color: #777777;
+	font-family: 'Georgia' serif;
+}
+
+#featured .feed-item .story-action a:hover {
+	color: #b3b3b1;
+}
+
+#featured .feed-item .overlay {
+	background: url('/img/play-arrow.png')
 }
